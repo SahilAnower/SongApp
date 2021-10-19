@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+:root{
+    --white: #F3EFCC;
+    --green: #32502E;
+    --black: #191A19;
+    --light-green: #D8E9A8;
+    --pink: #FF00E4;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    font-family: 'Comfortaa', cursive;
+}
+
+header{
+    background-color: var(--black);
+    /* color: #D8E9A8; */
+}
+
+.brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headi{
+    color: var(--light-green);
+    font-weight: 700;
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    padding: 5px;
+    padding-right: 5%;
+}
+
+ul li{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--light-green);
+}
+
+.nav-but li{
+    margin-right: 20px;
+}
+
+nav a{
+    transition: 0.8s;
+}
+
+nav a:hover{
+    color: #FF00E4;
+}
+
+.container{
+    min-height: 67vh;
+    background-color: var(--black);
+    width: 75%;
+    margin: 5px auto;  
+    color: var(--white);
+    display: flex;
+    background-image: url("./Images/bruce-mars-DBGwy7s3QY0-unsplash.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    color: var(--white);
+    background-color: var(--black);
+    height: 92px;
+}
+
+.songInfo{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 10vw;
+}
+
+.songInfo img{
+    width: 50px;
+    margin-right: 5px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+}
+
+#progressBar{
+    width: 70vw;
+    cursor: pointer;
+}
+
+.icons{
+    margin-top: 15px;
+}
+
+.icons i{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 60px;
+}
+
+.banner img{
+    position: relative;
+    width: 300px;
+    left: 19vw;
+    top: 10vh;
+    border-radius: 50%;
+}
+
+.songitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 16px 0px #ffef78;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.songitem img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* .songList i{
+
+} */
+
+.timestamp{
+    margin-right: 10px;
+}
+
+.songItemPlay{
+    cursor: pointer;
+}
+
+.socials a{
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+@keyframes down {
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 3.5px;
+    }
+    100%{
+        top: 7px;
+    }
+}
+
+.socials a:hover{
+    animation-name: down;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in;
+    top: 7px;
+}
+
+.socials i{
+    margin-right: 5px;
+}
